@@ -1,0 +1,15 @@
+import { NavLink } from "react-router-dom"
+
+const Navbar = () => {
+  return (
+    <nav className="flex justify-around mr-[20%] h-20 bg-white p-3 content-center">
+        <NavLink to="/" className="text-3xl">Trisog</NavLink>
+        <NavLink to="/" className="text-2xl">Home</NavLink>
+        <NavLink to="/about"className="text-2xl">About</NavLink>
+        <NavLink to="/destination"className="text-2xl">Destination</NavLink>
+        <NavLink to="/register"className="text-2xl">Register/log-in</NavLink>
+    </nav>
+  )
+}
+
+export default Navbar
