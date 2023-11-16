@@ -1,0 +1,46 @@
+ [
+    {
+        "id": 1,
+        "url":"/images/milonpm.jpg",
+        "name":"Milon KUmar MAhato",
+        "desigatiion":"Founder and Director"
+    },
+    {
+        "id": 2,
+        "url":"https://source.unsplash.com/mEZ3PoFGs_k/300x300",
+        "name":"Milon KUmar MAhato",
+        "desigatiion":"Founder and Director"
+    },
+    {
+        "id": 3,
+        "url":"https://source.unsplash.com/C8Ta0gwPbQg/300x300",
+        "name":"Milon KUmar MAhato",
+        "desigatiion":"Founder and Director"
+    },
+    {
+        "id": 4,
+        "url":"https://source.unsplash.com/DItYlc26zVI/300x300",
+        "name":"Milon KUmar MAhato",
+        "desigatiion":"Founder and Director"
+    },
+     {
+        "id": 5,
+        "url":"https://source.unsplash.com/IF9TK5Uy-KI/300x300",
+        "name":"Milon KUmar MAhato",
+        "desigatiion":"Founder and Director"
+    },
+    {
+        "id": 6,
+        "url":"https://source.unsplash.com/IF9TK5Uy-KI/300x300",
+         "name":"Milon KUmar MAhato",
+         "desigatiion":"Founder and Director"
+
+    },
+    {
+        "id": 7,
+        "url":"https://source.unsplash.com/C8Ta0gwPbQg/300x300",
+        "name":"Milon KUmar MAhato",
+        "desigatiion":"Founder and Director"
+
+    }
+]

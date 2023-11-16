@@ -1,79 +1,67 @@
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import data from './data.json';
-// import { faDollarSign } from '@fortawesome/free-solid-svg-icons';
-console.log(data)
+import { faDollarSign } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Silder from '../Components/silder';
+import AutoSilder from '../Components/autoSilderTestimonal';
+
+
 const About = () => {
 
-//   const data =[
-//   {
-//       "icon":"faDollarSign",
-//       "title": "Cheap cost",
-//       "des":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quisquam illum error repudiandae libero laborios"
+  const data =[
+  {
+      "icon":faDollarSign,
+      "title": "Cheap cost",
+      "des":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quisquam illum error repudiandae libero laborios"
 
-//   },
+  },
 
   
-//   {
-//       "icon":"faDollarSign",
-//       "title": "Cheap cost",
-//       "des":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quisquam illum error repudiandae libero laborios"
+  {
+      "icon":faDollarSign,
+      "title": "Cheap cost",
+      "des":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quisquam illum error repudiandae libero laborios"
 
-//   },
+  },
 
 
-//   {
-//       "icon":"faDollarSign",
-//       "title": "Cheap cost",
-//       "des":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quisquam illum error repudiandae libero laborios"
+  {
+      "icon":faDollarSign,
+      "title": "Cheap cost",
+      "des":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quisquam illum error repudiandae libero laborios"
 
-//   }, 
+  }, 
   
   
-//   {
-//       "icon":"faDollarSign",
-//       "title": "Cheap cost",
-//       "des":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quisquam illum error repudiandae libero laborios"
+  {
+      "icon":faDollarSign,
+      "title": "Cheap cost",
+      "des":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quisquam illum error repudiandae libero laborios"
 
-//   },
+  },
 
-//   {
-//       "icon":"faDollarSign",
-//       "title": "Cheap cost",
-//       "des":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quisquam illum error repudiandae libero laborios"
+  {
+      "icon":faDollarSign,
+      "title": "Cheap cost",
+      "des":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quisquam illum error repudiandae libero laborios"
 
-//   },
-
-
-//   {
-//       "icon":"faDollarSign",
-//       "title": "Cheap cost",
-//       "des":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quisquam illum error repudiandae libero laborios"
-
-//   },
+  },
 
 
-//   {
-//       "icon":"faDollarSign",
-//       "title": "Cheap cost",
-//       "des":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quisquam illum error repudiandae libero laborios"
+  {
+      "icon":faDollarSign,
+      "title": "Cheap cost",
+      "des":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quisquam illum error repudiandae libero laborios"
 
-//   }, 
-  
-//   {
-//       "icon":"faDollarSign",
-//       "title": "Cheap cost",
-//       "des":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quisquam illum error repudiandae libero laborios"
+  }
 
-//   }
-// ]
+]
   
 
 
   return (
     <div>
       
-      <div className="hero min-h-[500px] object-cover" style={{backgroundImage: 'url("/images/Beautiful_Kuakata_Beach.jpg")'}}>
+      <div className="hero min-h-[500px] bg-white object-cover" style={{backgroundImage: 'url("/images/Beautiful_Kuakata_Beach.jpg")'}}>
   <div className="hero-overlay bg-opacity-60"></div>
   <div className="hero-content text-center text-neutral-content">
     <div className="max-w-md">
@@ -83,7 +71,7 @@ const About = () => {
 </div>
 
 
-<div className="hero min-h-[900px] bg-base-200">
+<div className="hero min-h-[900px] bg-white">
   <div className="hero-content flex-col lg:flex-row gap-[40%] absolute">
    <div className="relative basis-1/3 top-[-130px]">
   
@@ -111,8 +99,9 @@ Watch Now
 
 
 
-  <div className="h-[500px]">
-    
+  <div className="h-[600px] bg-slate-100">
+    <h2 className='text-center text-2xl italic mt-8 py-4 text-red-500'>Features</h2>
+    <p className='text-center text-xl'>Why Choose Us</p>
 
 {/* <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <svg className="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -123,25 +112,42 @@ Watch Now
     <p className="mb-3 font-normal text-gray-500 dark:text-gray-400">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quisquam illum error repudiandae libero laborios</p>
    
 </div> */}
+<div className='grid grid-cols-3 content-center gap-4 mx-[5%] my-8'>
 
-
-
-{ data.map((data)=> { 
+  { data.map((data)=> { 
 
   const{ des} =data;
-return(
-  <div key={Math.random()}>
-     <h1 className="text-3xl">{data.des}</h1>
-     n<p>{des}</p>
-  </div>
-)
+
+   return(
+      <article key={Math.random()} className='w-[350px] bg-white p-5 mx-5'>
+      <FontAwesomeIcon icon={data.icon} className='text-4xl'/>
+     <h1 className="text-3xl">{data.title}</h1>
+     <p>{des}</p>
+    </article>
+
+
+   )
    
 
 })
   
   }
 
+</div>
+
+
   </div>
+
+  <Silder />
+
+ <div className='flex flex-row justify-center content-center' > 
+ <div className='basis-1/2'></div>
+  <div className='basis-1/2 w-[600px] h-[400px] text-center'>
+  <AutoSilder />
+  </div>
+  </div>
+
+
     </div>
   )
 }
