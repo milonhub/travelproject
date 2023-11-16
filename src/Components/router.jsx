@@ -8,15 +8,15 @@ import Navbar from "./Navbar"
 const Router = () => {
   return (
     <div>
-        <BrowserRouter>
+      <BrowserRouter>
         <Navbar />
         <Routes>
-         <Route path="/" element={ <Home />}/>
-         <Route path="/about" element={<About />}/>
-         <Route path="/destination" element={<Destination />}/>
-         <Route path="/register" element={<Register />}/>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/destination" element={<Destination />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
-        </BrowserRouter>
+      </BrowserRouter>
     </div>
   )
 }
