@@ -2,7 +2,7 @@
 const Footer = () => {
   return (
     <div>
-       <footer className="p-10 bg-base-300 text-base-content h-[350px] bg-slate-800 text-white">
+       <footer className="p-10  content-center h-[350px] bg-slate-800 text-white">
 
         <div className="flex flex-row h-[350px]">
 
@@ -22,7 +22,7 @@ const Footer = () => {
         </div>
     </div>
   </div>
-
+       <div className="h-[300px] bg-white basis-1 mr-16"></div>
         <div className="basis-1/3">
        <header className="text-3xl italic mb-5 leading-loose">Company</header> 
         <p><a className="text-xl">About</a></p>
@@ -43,7 +43,8 @@ const Footer = () => {
     <a className="text-xl">Rajshahi University</a>
     </div>
   </div> 
-
+  <div className="h-[300px] basis-1 bg-white mr-16"></div>
+  <div>
   <form>
     <header className="text-xl italic">Sign Up Newsletter</header> 
     <fieldset className="form-control w-80">
@@ -51,12 +52,15 @@ const Footer = () => {
       <div className="">
         <input type="text" placeholder="Enter Email..." className="text-xl p-2" />
        
-        <button className="btn btn-active btn-secondary mt-4">Secondary</button>
+        <button className="btn btn-active btn-secondary mt-4 text-2xl">Submit</button>
         
 
       </div>
     </fieldset>
+    <p className="text-2xl my-10">© Trisog All Right Reserved </p>
   </form>
+  </div>
+
   </div>
  
 </footer>
