@@ -28,7 +28,7 @@ export default function Silder() {
                     clickable: true,
                 }}
                 modules={[FreeMode, Pagination]}
-                className="mySwiper mx-16 py-8 "
+                className="mySwiper mx-16 py-8 bg-white"
             >
 
                 {imagedata.map((imagedata) => {

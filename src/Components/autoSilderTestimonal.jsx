@@ -74,11 +74,6 @@ export default function AutoSilder() {
                     )
                 })}
 
-
-                {/* <SwiperSlide><div className='h-72'>Slide 1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores quia fuga inventore eaque voluptatibus. Perspiciatis eos facere recusandae, quia minus voluptas inventore harum!</div></SwiperSlide>
-        <SwiperSlide><div className='h-72'>Slide 1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores quia fuga inventore eaque voluptatibus. Perspiciatis eos facere recusandae, quia minus voluptas inventore harum!</div></SwiperSlide>
-        <SwiperSlide><div className='h-72'>Slide 1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores quia fuga inventore eaque voluptatibus. Perspiciatis eos facere recusandae, quia minus voluptas inventore harum!</div></SwiperSlide>
-         */}
             </Swiper>
         </>
     );

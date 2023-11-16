@@ -131,13 +131,19 @@ const About = () => {
       </div>
 
       <Silder />
-
-      <div className='flex flex-row justify-center content-center' >
-        <div className='basis-1/2'></div>
-        <div className='basis-1/2 w-[600px] h-[400px] text-center'>
-          <AutoSilder />
+      <div className='w-full h-full bg-slate-200 py-7'>
+        <div className='flex flex-row justify-center content-center mx-32 my-16' >
+          <div className='basis-1/2 relative px-16'>
+            <img src="https://source.unsplash.com/7etIYqqw2jU/300x300" alt="pic" className='absolute top-[100px] rotate-[-12deg] left-10 w-[250px] h-[120px]' />
+            <img src="https://source.unsplash.com/5AxRCxe_fa0/300x300" width="180px" height="250px" alt="pic" className='absolute top-[225px] rotate-[10deg] h-[100px] w-[180px]' />
+            <img src="https://source.unsplash.com/Q6KwRsO0_YQ/300x300" alt="" className='rotate-[10deg] w-[180px] h-[100px]' />
+          </div>
+          <div className='basis-1/2 w-[600px] h-[400px] text-center'>
+            <AutoSilder />
+          </div>
         </div>
       </div>
+
 
 
     </div>
