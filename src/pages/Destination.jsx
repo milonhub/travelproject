@@ -63,63 +63,63 @@ const Destination = () => {
             </table>
           </div>
         </div>
-        
+
       </div>
 
       <div className="w-[70%] p-10 mx-8">
-            <h1 className="text-3xl my-6 font-bold">About Uk</h1>
-            <p className="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore totam magnam aperiam eos iste dolor eius accusamus praesentium ducimus debitis odio minima nemo beatae ab repellat cupiditate deleniti eveniet, eligendi aliquid, sunt dignissimos, tempora dolorum. Deleniti perferendis et neque. Optio praesentium dicta facere distinctio omnis molestias, laboriosam amet odio nisi debitis voluptatibus nesciunt repellat et hic provident adipisci neque. Delectus vel iusto esse enim quasi tenetur rerum quas consequatur odio earum facilis rem, explicabo ipsa, voluptates aspernatur! Ipsum, est vero!</p>
+        <h1 className="text-3xl my-6 font-bold">About Uk</h1>
+        <p className="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore totam magnam aperiam eos iste dolor eius accusamus praesentium ducimus debitis odio minima nemo beatae ab repellat cupiditate deleniti eveniet, eligendi aliquid, sunt dignissimos, tempora dolorum. Deleniti perferendis et neque. Optio praesentium dicta facere distinctio omnis molestias, laboriosam amet odio nisi debitis voluptatibus nesciunt repellat et hic provident adipisci neque. Delectus vel iusto esse enim quasi tenetur rerum quas consequatur odio earum facilis rem, explicabo ipsa, voluptates aspernatur! Ipsum, est vero!</p>
 
-            <br />
-            <p className="text-xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem explicabo necessitatibus, dignissimos a eveniet eos, reprehenderit officiis consequatur illum ea, et quibusdam repudiandae nostrum ratione doloribus numquam distinctio. Sit vel mollitia, id rem praesentium laudantium minima blanditiis dolorum in eos reprehenderit, voluptatem, porro omnis molestiae magnam est? Eaque maxime beatae ex distinctio, tenetur voluptatem vitae molestias natus consequatur nihil, officia facere quidem debitis asperiores quia aperiam sunt soluta saepe fugit modi voluptate ipsa officiis esse? Ducimus facere odit dicta perspiciatis debitis aliquid molestiae consectetur libero dolores magnam, reiciendis sequi, deleniti unde temporibus ea dolor nobis ut perferendis quod omnis et!lorem200
-            </p>
-            <br />
-             <p className="text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius quasi officia rerum excepturi similique quidem, ab numquam fuga, harum non laborum porro quisquam itaque possimus. Optio dolorum fuga eum, est a voluptatum eveniet saepe illo corrupti, consequatur quae facilis dolores autem neque fugiat distinctio. Quibusdam architecto rem voluptate amet impedit totam expedita inventore explicabo mollitia autem, minus consequatur obcaecati dolorum! Adipisci dicta veniam quis non asperiores sapiente numquam voluptatibus temporibus! Tempore temporibus dignissimos labore est eaque accusamus quis cum, aliquid quae excepturi sequi beatae illum quam nostrum recusandae odio, quisquam esse quasi! Officia ad quaerat eius libero, odio beatae id animi! Minus voluptates officiis earum repudiandae modi distinctio quidem et omnis velit ea debitis magni, incidunt quae totam, voluptatem quia laboriosam tenetur fugit dolorum ipsam fuga qui iste amet. Maxime quis pariatur, dolor ipsum iste at impedit molestiae vel culpa. Nobis commodi dolorum accusamus dignissimos doloremque modi incidunt perspiciatis est nostrum sunt dolores quaerat accusantium veniam explicabo ab odit, corporis aperiam. Ad vitae nesciunt officiis ut autem atque sequi aperiam eos repellat, incidunt, iure omnis laudantium? Reprehenderit perspiciatis dolore tenetur minus quaerat, ullam consequuntur numquam voluptate ipsa error? Provident delectus tenetur architecto sed unde nemo voluptates quod? Quasi, omnis maiores?</p>
-              <br />
-              <br />
-             <h1 className="text-3xl font-bold">Basic Information</h1>
+        <br />
+        <p className="text-xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem explicabo necessitatibus, dignissimos a eveniet eos, reprehenderit officiis consequatur illum ea, et quibusdam repudiandae nostrum ratione doloribus numquam distinctio. Sit vel mollitia, id rem praesentium laudantium minima blanditiis dolorum in eos reprehenderit, voluptatem, porro omnis molestiae magnam est? Eaque maxime beatae ex distinctio, tenetur voluptatem vitae molestias natus consequatur nihil, officia facere quidem debitis asperiores quia aperiam sunt soluta saepe fugit modi voluptate ipsa officiis esse? Ducimus facere odit dicta perspiciatis debitis aliquid molestiae consectetur libero dolores magnam, reiciendis sequi, deleniti unde temporibus ea dolor nobis ut perferendis quod omnis et!lorem200
+        </p>
+        <br />
+        <p className="text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius quasi officia rerum excepturi similique quidem, ab numquam fuga, harum non laborum porro quisquam itaque possimus. Optio dolorum fuga eum, est a voluptatum eveniet saepe illo corrupti, consequatur quae facilis dolores autem neque fugiat distinctio. Quibusdam architecto rem voluptate amet impedit totam expedita inventore explicabo mollitia autem, minus consequatur obcaecati dolorum! Adipisci dicta veniam quis non asperiores sapiente numquam voluptatibus temporibus! Tempore temporibus dignissimos labore est eaque accusamus quis cum, aliquid quae excepturi sequi beatae illum quam nostrum recusandae odio, quisquam esse quasi! Officia ad quaerat eius libero, odio beatae id animi! Minus voluptates officiis earum repudiandae modi distinctio quidem et omnis velit ea debitis magni, incidunt quae totam, voluptatem quia laboriosam tenetur fugit dolorum ipsam fuga qui iste amet. Maxime quis pariatur, dolor ipsum iste at impedit molestiae vel culpa. Nobis commodi dolorum accusamus dignissimos doloremque modi incidunt perspiciatis est nostrum sunt dolores quaerat accusantium veniam explicabo ab odit, corporis aperiam. Ad vitae nesciunt officiis ut autem atque sequi aperiam eos repellat, incidunt, iure omnis laudantium? Reprehenderit perspiciatis dolore tenetur minus quaerat, ullam consequuntur numquam voluptate ipsa error? Provident delectus tenetur architecto sed unde nemo voluptates quod? Quasi, omnis maiores?</p>
+        <br />
+        <br />
+        <h1 className="text-3xl font-bold">Basic Information</h1>
 
-             <div className=" mt-6 bg-slate-300 p-8">
-            
-            <table className="table">
-              <tbody>
+        <div className=" mt-6 bg-slate-300 p-8">
 
-                <tr>
+          <table className="table">
+            <tbody>
 
-                  <td>Name</td>
-                  <td>United States</td>
-                </tr>
-                <tr>
+              <tr>
 
-                  <td>Capital</td>
-                  <td>Washington, D.C.</td>
-                </tr>
+                <td>Name</td>
+                <td>United States</td>
+              </tr>
+              <tr>
 
-                <tr>
+                <td>Capital</td>
+                <td>Washington, D.C.</td>
+              </tr>
 
-                  <td>Currency</td>
-                  <td>United States Dollar (USD)</td>
-                </tr>
-                <tr>
+              <tr>
 
-                  <td>language</td>
-                  <td>English</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          </div>
+                <td>Currency</td>
+                <td>United States Dollar (USD)</td>
+              </tr>
+              <tr>
 
-          <div className="p-16">
-          <div className="flex flex-row justify-between"><h1 className='text-4xl font-bold mx-28'>Popular Tourist in Uk</h1>
-          <p className="text-xl mr-32">see all <FontAwesomeIcon icon="faArrowRight" className="text-xl"/></p></div>
-          <PopularEnglandimage />
-          </div>
-          <div className="p-16">
-          <div className="flex flex-row justify-between"><h1 className='text-4xl font-bold mx-28'>Activities in Uk</h1>
+                <td>language</td>
+                <td>English</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div className="p-16">
+        <div className="flex flex-row justify-between"><h1 className='text-4xl font-bold mx-28'>Popular Tourist in Uk</h1>
+          <p className="text-xl mr-32">see all <FontAwesomeIcon icon="faArrowRight" className="text-xl" /></p></div>
+        <PopularEnglandimage />
+      </div>
+      <div className="p-16">
+        <div className="flex flex-row justify-between"><h1 className='text-4xl font-bold mx-28'>Activities in Uk</h1>
           <p className="text-xl mr-32">see all</p></div>
-          <PopularEnglandimage />
-          </div>
+        <PopularEnglandimage />
+      </div>
     </div>
   )
 }
