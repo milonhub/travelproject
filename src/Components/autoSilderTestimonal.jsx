@@ -44,8 +44,7 @@ export default function AutoSilder() {
 
     return (
         <>
-            <h1 className='text-center text-xl italic text-red-500 pt-8'>Testimonals</h1>
-            <p className='text-center text-3xl'>What travelers say</p>
+          
             <Swiper
                 spaceBetween={30}
                 centeredSlides={true}
@@ -65,8 +64,8 @@ export default function AutoSilder() {
                     return (
 
                         <>
-                            <SwiperSlide><div className='h-72 ' key={name}>
-                                <h1 className='text-8xl my-2'>,,</h1>
+                            <SwiperSlide className='mb-10'><div className='h-72' key={name}>
+                                <h1 className='text-8xl my-2 text-center'>,,</h1>
                                 <p className='text-xl'>{comment}</p>
                                 <p className='my-4 text-2xl'>By {name}, {occupation}</p>
                             </div></SwiperSlide>

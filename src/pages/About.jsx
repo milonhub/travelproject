@@ -139,6 +139,8 @@ const About = () => {
             <img src="https://source.unsplash.com/Q6KwRsO0_YQ/300x300" alt="" className='rotate-[10deg] w-[180px] h-[100px]' />
           </div>
           <div className='basis-1/2 w-[600px] h-[400px] text-center'>
+            <h1 className='text-center text-xl italic text-red-500 pt-8'>Testimonals</h1>
+            <p className='text-center text-3xl'>What travelers say</p>
             <AutoSilder />
           </div>
         </div>

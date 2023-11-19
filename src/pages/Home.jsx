@@ -1,11 +1,36 @@
+/* eslint-disable react/no-unescaped-entities */
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Calendar from "../Components/claendar"
 import TourBooking from "../Components/destinationSearch"
 import DestinationSelect from "../Components/wheregodrop"
 import { faCheck } from "@fortawesome/free-solid-svg-icons"
+import AutoSilder from "../Components/autoSilderTestimonal"
 
 
 const Home = () => {
+  const testimonalsImage = [
+    {
+      "id": 1,
+      "url": ""
+    },
+
+    {
+      "id": 2,
+      "url": ""
+    },
+
+    {
+      "id": 3,
+      "url": ""
+    },
+
+    {
+      "id": 4,
+      "url": ""
+    },
+
+  ]
+  console.log(testimonalsImage)
   return (
     <>
       <div className="bg-blue-700"><div className=" h-full flex justify-center">
@@ -56,6 +81,64 @@ const Home = () => {
               </div>
               <button className="btn btn-primary my-3">Contact</button>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex flex-row justify-center items-center gap-12">
+        <div className="relative">
+
+          <div className="avatar absolute bottom-32 left-9">
+            <div className="w-12 rounded-full absolute right-7 bottom-9">
+              <img src="https://source.unsplash.com/CgCH4V4cNGk/200x200" />
+            </div>
+          </div>
+          <div className="avatar">
+            <div className="w-12 rounded-full absolute bottom-12 right-14">
+              <img src="https://source.unsplash.com/QXevDflbl8A/200x200" />
+            </div>
+          </div>
+          <div className="avatar">
+            <div className="w-8 rounded-full absolute top-0 right-8">
+              <img src="https://source.unsplash.com/BqNEe_ZAtxg/200x200" />
+            </div>
+          </div>
+          <div className="avatar">
+            <div className="w-24 rounded-full">
+              <img src="https://source.unsplash.com/GH-mSApoKO0/200x200" />
+            </div>
+          </div>
+
+
+        </div>
+
+
+
+
+        <div className="w-[500px] h-full pb-10 ">
+          <h1 className='text-center text-xl italic text-red-500 pt-8'>Testimonals</h1>
+          <p className='text-center text-4xl font-bold'>What our customer <br /> says about us</p>
+          <AutoSilder />
+        </div>
+
+        <div className="avatar">
+          <div className="w-12 rounded-full absolute left-64">
+            <img src="https://source.unsplash.com/yIOViGQmjJ4/200x200" />
+          </div>
+        </div>
+        <div className="avatar">
+          <div className="w-12 rounded-full absolute bottom-16 left-36">
+            <img src="https://source.unsplash.com/QXevDflbl8A/200x200" />
+          </div>
+        </div>
+        <div className="avatar">
+          <div className="w-8 rounded-full absolute top-16 left-32">
+            <img src="https://source.unsplash.com/BqNEe_ZAtxg/200x200" />
+          </div>
+        </div>
+        <div className="avatar">
+          <div className="w-16 rounded-full">
+            <img src="https://source.unsplash.com/GH-mSApoKO0/200x200" />
           </div>
         </div>
       </div>
