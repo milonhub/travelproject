@@ -5,7 +5,7 @@ import TourBooking from "../Components/destinationSearch"
 import DestinationSelect from "../Components/wheregodrop"
 import { faCheck } from "@fortawesome/free-solid-svg-icons"
 import AutoSilder from "../Components/autoSilderTestimonal"
-
+import latestData from "../Components/latestTraveldata.json"
 
 const Home = () => {
   const testimonalsImage = [
@@ -142,6 +142,31 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      <div>
+        <h1 className="text-2xl text-center italic">Updates</h1>
+        <p className="text-2xl text-center font-bold">Latest Travel Guides</p>
+      <div className="grid grid-cols-2 mt-16">
+        {latestData.map((data) => {
+
+          const { id, url, date, des } = data;
+          return (
+
+            <div key={id}>
+              <div className="hero-content flex-col lg:flex-row">
+                <img src={url} className="w-32 h-32" />
+                <div className="w-64">
+                  <p className="text-xl flex">{date} <li className="mx-6">Admin</li></p>
+                  <p className="text-xl font-semibold">{des}</p>
+                </div>
+              </div>
+            </div>
+
+          )
+        })}
+      </div>
+      </div>
+      <hr className="my-8 mx-[10%]"></hr>
     </>
   )
 }
