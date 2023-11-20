@@ -6,31 +6,32 @@ import DestinationSelect from "../Components/wheregodrop"
 import { faCheck } from "@fortawesome/free-solid-svg-icons"
 import AutoSilder from "../Components/autoSilderTestimonal"
 import latestData from "../Components/latestTraveldata.json"
+import { faInstagramSquare } from "@fortawesome/free-brands-svg-icons"
 
 const Home = () => {
-  const testimonalsImage = [
+  const images = [
     {
       "id": 1,
-      "url": ""
+      "url": "https://source.unsplash.com/eBKbKMiE03c/300x300"
     },
 
     {
       "id": 2,
-      "url": ""
+      "url": "https://source.unsplash.com/y85Tir86Q34/300x300"
     },
 
     {
       "id": 3,
-      "url": ""
+      "url": "https://source.unsplash.com/XQ1cWY7v2PI/300x300"
     },
 
     {
       "id": 4,
-      "url": ""
+      "url": "https://source.unsplash.com/2b-P_jWjh7I/300x300"
     },
 
   ]
-  console.log(testimonalsImage)
+
   return (
     <>
       <div className="bg-blue-700"><div className=" h-full flex justify-center">
@@ -146,27 +147,47 @@ const Home = () => {
       <div>
         <h1 className="text-2xl text-center italic">Updates</h1>
         <p className="text-2xl text-center font-bold">Latest Travel Guides</p>
-      <div className="grid grid-cols-2 mt-16">
-        {latestData.map((data) => {
+        <div className="grid grid-cols-2 mt-16">
+          {latestData.map((data) => {
 
-          const { id, url, date, des } = data;
-          return (
+            const { id, url, date, des } = data;
+            return (
 
-            <div key={id}>
-              <div className="hero-content flex-col lg:flex-row">
-                <img src={url} className="w-32 h-32" />
-                <div className="w-64">
-                  <p className="text-xl flex">{date} <li className="mx-6">Admin</li></p>
-                  <p className="text-xl font-semibold">{des}</p>
+              <div key={id}>
+                <div className="hero-content flex-col lg:flex-row">
+                  <img src={url} className="w-32 h-32" />
+                  <div className="w-64">
+                    <p className="text-xl flex">{date} <li className="mx-6">Admin</li></p>
+                    <p className="text-xl font-semibold">{des}</p>
+                  </div>
                 </div>
               </div>
-            </div>
 
-          )
-        })}
+            )
+          })}
+        </div>
       </div>
-      </div>
+
       <hr className="my-8 mx-[10%]"></hr>
+
+      <div className="flex gap-5 justify-center mb-8 -z-10 hover:z-10">
+        <div className="flex flex-col justify-center gap-6">
+          <p className="rotate-[-90deg] text-xl font-semibold">@Trisog</p>
+          <FontAwesomeIcon icon={faInstagramSquare} className="text-xl text-black" />
+        </div>
+
+        {
+          images.map((image) => {
+            const { url, id } = image;
+            return (
+              <article key={id}>
+                <img src={url} alt="pic" className="w-[280px] h-[300px]" />
+              </article>
+            )
+          })
+        }
+      </div>
+
     </>
   )
 }
