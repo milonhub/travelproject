@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Calendar from "../Components/claendar"
 import TourBooking from "../Components/destinationSearch"
 import DestinationSelect from "../Components/wheregodrop"
-import { faCheck } from "@fortawesome/free-solid-svg-icons"
+import { faCheck, faCirclePlay, faTree } from "@fortawesome/free-solid-svg-icons"
 import AutoSilder from "../Components/autoSilderTestimonal"
 import latestData from "../Components/latestTraveldata.json"
 import { faInstagramSquare } from "@fortawesome/free-brands-svg-icons"
@@ -174,12 +174,33 @@ const Home = () => {
 
       <hr className="my-8 mx-[10%]"></hr>
 
-      <div className="hero min-h-[600px]" style={{ backgroundImage: 'url(https://source.unsplash.com/cWHAW_tjk7Q)' }}>
+      <div className="hero min-h-[600px] my-11" style={{ backgroundImage: 'url(https://source.unsplash.com/cWHAW_tjk7Q)' }}>
         <div className="hero-overlay bg-opacity-60"></div>
-        <div className="hero-content text-center text-neutral-content">
+        <div className="hero-content text-neutral-content gap-52">
           <div>
+            <FontAwesomeIcon icon={faCirclePlay} style={{color: "#e6ad0f",}} className="text-xl"/>
             <h1 className="text-xl text-yellow-500 italic">Are you ready to travel?</h1>
             <p className="text-">Tevily is world Leading Online Tour Booking Platform</p>
+            <button className="border-2 border-solid py-2 px-6 my-2 hover:bg-slate-500 text-xl">Contact</button>
+          </div>
+
+          <div className="grid grid-cols-2 gap-3">
+             <div className="text-center w-32 h-32 p-8 bg-slate-100 rounded-lg">
+              <FontAwesomeIcon icon={faTree} style={{color: "#e6ad0f",}} className="text-xl"/>
+              <h2 className="text-2xl font-bold text-black">Wildlife <br /> Tour</h2>
+             </div>
+             <div className="text-center w-32 h-32 p-8 bg-slate-100 rounded-lg">
+              <FontAwesomeIcon icon={faTree} style={{color: "#e6ad0f",}} className="text-xl"/>
+              <h2 className="text-2xl font-bold text-black">Wildlife <br /> Tour</h2>
+             </div>
+             <div className="text-center w-32 h-32 p-8 bg-slate-100 rounded-lg">
+              <FontAwesomeIcon icon={faTree} style={{color: "#e6ad0f",}} className="text-xl"/>
+              <h2 className="text-2xl font-bold text-black">Wildlife <br /> Tour</h2>
+             </div>
+             <div className="text-center w-32 h-32 p-8 bg-slate-100 rounded-lg">
+              <FontAwesomeIcon icon={faTree} style={{color: "#e6ad0f",}} className="text-xl"/>
+              <h2 className="text-2xl font-bold text-black">Wildlife <br /> Tour</h2>
+             </div>
           </div>
         </div>
       </div>
