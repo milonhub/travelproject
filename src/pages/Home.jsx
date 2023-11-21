@@ -178,29 +178,29 @@ const Home = () => {
         <div className="hero-overlay bg-opacity-60"></div>
         <div className="hero-content text-neutral-content gap-52">
           <div>
-            <FontAwesomeIcon icon={faCirclePlay} style={{color: "#e6ad0f",}} className="text-xl"/>
+            <FontAwesomeIcon icon={faCirclePlay} style={{ color: "#e6ad0f", }} className="text-xl" />
             <h1 className="text-xl text-yellow-500 italic">Are you ready to travel?</h1>
             <p className="text-">Tevily is world Leading Online Tour Booking Platform</p>
             <button className="border-2 border-solid py-2 px-6 my-2 hover:bg-slate-500 text-xl">Contact</button>
           </div>
 
           <div className="grid grid-cols-2 gap-3">
-             <div className="text-center w-32 h-32 p-8 bg-slate-100 rounded-lg">
-              <FontAwesomeIcon icon={faTree} style={{color: "#e6ad0f",}} className="text-xl"/>
+            <div className="text-center w-32 h-32 p-8 bg-slate-100 rounded-lg">
+              <FontAwesomeIcon icon={faTree} style={{ color: "#e6ad0f", }} className="text-xl" />
               <h2 className="text-2xl font-bold text-black">Wildlife <br /> Tour</h2>
-             </div>
-             <div className="text-center w-32 h-32 p-8 bg-slate-100 rounded-lg">
-              <FontAwesomeIcon icon={faTree} style={{color: "#e6ad0f",}} className="text-xl"/>
+            </div>
+            <div className="text-center w-32 h-32 p-8 bg-slate-100 rounded-lg">
+              <FontAwesomeIcon icon={faTree} style={{ color: "#e6ad0f", }} className="text-xl" />
               <h2 className="text-2xl font-bold text-black">Wildlife <br /> Tour</h2>
-             </div>
-             <div className="text-center w-32 h-32 p-8 bg-slate-100 rounded-lg">
-              <FontAwesomeIcon icon={faTree} style={{color: "#e6ad0f",}} className="text-xl"/>
+            </div>
+            <div className="text-center w-32 h-32 p-8 bg-slate-100 rounded-lg">
+              <FontAwesomeIcon icon={faTree} style={{ color: "#e6ad0f", }} className="text-xl" />
               <h2 className="text-2xl font-bold text-black">Wildlife <br /> Tour</h2>
-             </div>
-             <div className="text-center w-32 h-32 p-8 bg-slate-100 rounded-lg">
-              <FontAwesomeIcon icon={faTree} style={{color: "#e6ad0f",}} className="text-xl"/>
+            </div>
+            <div className="text-center w-32 h-32 p-8 bg-slate-100 rounded-lg">
+              <FontAwesomeIcon icon={faTree} style={{ color: "#e6ad0f", }} className="text-xl" />
               <h2 className="text-2xl font-bold text-black">Wildlife <br /> Tour</h2>
-             </div>
+            </div>
           </div>
         </div>
       </div>
