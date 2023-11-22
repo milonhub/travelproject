@@ -51,10 +51,10 @@ const Home = () => {
 
       </div>
         <div>
-      
-         <div className="flex gap-5 bg-slate-100 pt-3 pb-8 px-8 justify-center absolute top-[620px] w-[900px] rounded-xl left-[25%]">
-           <TourBooking />
-          <Calendar />
+
+          <div className="flex gap-5 bg-slate-100 pt-3 pb-8 px-8 justify-center absolute top-[620px] w-[900px] rounded-xl left-[25%]">
+            <TourBooking />
+            <Calendar />
           </div>
         </div>
       </div>
