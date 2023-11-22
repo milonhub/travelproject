@@ -2,12 +2,11 @@ import { useState } from 'react';
 
 const TourBooking = () => {
     const destinations = [
-        'City Tour',
-        'Adventure Tour',
-        'Cultural Tour',
-        'Beach Tour',
-        // Add more tour types as needed
-    ];
+        'Dhaka city',
+        'Cox-bazar sea beach',
+        'Rajshahi city',
+        'Rangpur',
+    ]
 
     const [selectedDestination, setSelectedDestination] = useState(null);
     const [selectedTourType, setSelectedTourType] = useState('');
@@ -22,23 +21,21 @@ const TourBooking = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // You can handle the form submission here, such as sending the selected destination and tour type to a server
-        console.log('Selected Destination:', selectedDestination);
-        console.log('Selected Tour Type:', selectedTourType);
     };
 
     return (
         <div>
-            <h1>Tour Booking</h1>
-            <form onSubmit={handleSubmit}>
+          
+            <form onSubmit={handleSubmit} className='flex gap-7'>
                 <div>
-                    <label htmlFor="destinationSelect">Select a destination:</label>
+                    <label htmlFor="destinationSelect" className='text-xl italic text-semibold text-black'>Destination:</label> ,<br />
                     <select
                         id="destinationSelect"
                         value={selectedDestination}
                         onChange={handleDestinationChange}
+                        className='text-2xl py-2 px-3 outline-none border-2 border-current rounded-lg'
                     >
-                        <option value="">Choose a destination</option>
+                        <option value="">Where to go?</option>
                         {destinations.map((destination, index) => (
                             <option key={index} value={destination}>
                                 {destination}
@@ -47,21 +44,22 @@ const TourBooking = () => {
                     </select>
                 </div>
                 <div>
-                    <label htmlFor="tourTypeSelect">Select a tour type:</label>
+                    <label htmlFor="tourTypeSelect" className='text-xl italic text-semibold'>Type</label> <br />
                     <select
                         id="tourTypeSelect"
                         value={selectedTourType}
                         onChange={handleTourTypeChange}
+                        className='text-2xl py-2 px-3 outline-none border-2 border-current rounded-lg'
                     >
-                        <option value="">Choose a tour type</option>
+                        <option value="">Activity</option>
                         <option value="City Tour">City Tour</option>
                         <option value="Adventure Tour">Adventure Tour</option>
                         <option value="Cultural Tour">Cultural Tour</option>
                         <option value="Beach Tour">Beach Tour</option>
-                        {/* Add more tour types as needed */}
+                      
                     </select>
                 </div>
-                <button type="submit">Book Tour</button>
+               
             </form>
         </div>
     );

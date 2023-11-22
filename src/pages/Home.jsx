@@ -2,7 +2,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Calendar from "../Components/claendar"
 import TourBooking from "../Components/destinationSearch"
-import DestinationSelect from "../Components/wheregodrop"
+// import DestinationSelect from "../Components/wheregodrop"
 import { faCheck, faCirclePlay, faTree } from "@fortawesome/free-solid-svg-icons"
 import AutoSilder from "../Components/autoSilderTestimonal"
 import latestData from "../Components/latestTraveldata.json"
@@ -34,7 +34,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="bg-blue-700"><div className=" h-full flex justify-center">
+      <div className="bg-blue-700"><div className=" h-[700px] flex justify-center">
         <div className="hero w-[600px]">
           <div className="hero-content flex-row gap-4">
             <div className="mx-8">
@@ -51,9 +51,11 @@ const Home = () => {
 
       </div>
         <div>
-          <DestinationSelect />
-          <TourBooking />
+      
+         <div className="flex gap-5 bg-slate-100 pt-3 pb-8 px-8 justify-center absolute top-[620px] w-[900px] rounded-xl left-[25%]">
+           <TourBooking />
           <Calendar />
+          </div>
         </div>
       </div>
 
