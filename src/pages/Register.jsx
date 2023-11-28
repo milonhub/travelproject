@@ -1,31 +1,30 @@
 import { useState } from 'react';
+import {auth} from '../firebase/firebaseConfig';
+import { createUserWithEmailAndPassword } from 'firebase/auth';
 
 const Register = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [loggedIn, setLoggedIn] = useState(false);
+  // const [loggedIn, setLoggedIn] = useState(false);
 
-  const handleLogin = () => {
+  const handleSignin =async () => {
+   try {
+    const user = await createUserWithEmailAndPassword(auth, username, password);
+    console.log(user)
 
-    if (username === 'user' && password === 'password') {
-      setLoggedIn(true);
-    } else {
-      alert('Invalid username or password');
-    }
-  };
+   } catch(error){
+      console.log(error.message)
+   }
+  }
+
 
   return (
     <div className='flex justify-center w-full h-[500px] my-12'>
 
       <div className='w-[600px] h-[500px] bg-slate-400 p-12 rounded-xl'>
-        {loggedIn ? (
+        
           <div>
-            <h2>Welcome, {username}!</h2>
-            <p>You are now logged in.</p>
-          </div>
-        ) : (
-          <div>
-            <h2 className='text-4xl'>Login Page</h2>
+            <h2 className='text-4xl'>Sign-in Page</h2>
             <form>
               <div className='mt-8'>
                 <label className='text-2xl'>
@@ -47,12 +46,12 @@ const Register = () => {
                 />
               </label>
               <br />
-              <button type="button" onClick={handleLogin} className='text-2xl my-3 bg-slate-700 px-4 py-2 text-white hover:bg-red-400 rounded-lg'>
-                Login
+              <button type="button" onClick={handleSignin} className='text-2xl my-3 bg-slate-700 px-4 py-2 text-white hover:bg-red-400 rounded-lg'>
+                Register
               </button>
             </form>
           </div>
-        )}
+        
       </div>
     </div>
 
