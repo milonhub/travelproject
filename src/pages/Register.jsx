@@ -3,6 +3,7 @@ import { auth } from '../firebase/firebaseConfig';
 import {
   createUserWithEmailAndPassword,
   onAuthStateChanged,
+  signInWithEmailAndPassword,
   signOut
 
 } from 'firebase/auth';
@@ -21,8 +22,8 @@ const Register = () => {
 
   const handleSignin = async () => {
     try {
-      const user = await createUserWithEmailAndPassword(auth, username, password);
-      console.log(user)
+       await createUserWithEmailAndPassword(auth, username, password);
+      
 
     } catch (error) {
       console.log(error.message)
@@ -34,7 +35,7 @@ const Register = () => {
 
   const handlelogin = async () => {
     try {
-      const user = await createUserWithEmailAndPassword(auth, loginEmail, loginpassword);
+      const user = await signInWithEmailAndPassword(auth, loginEmail, loginpassword);
       console.log(user)
 
     } catch (error) {
@@ -49,10 +50,10 @@ const Register = () => {
 
         <div>
           <h2 className='text-4xl'>Sign-in Page</h2>
-          <form>
+       
             <div className='mt-8'>
               <label className='text-2xl'>
-                Username:
+                Username: 
                 <input
                   type="text"
                   value={username}
@@ -73,7 +74,7 @@ const Register = () => {
             <button type="button" onClick={handleSignin} className='text-2xl my-3 bg-slate-700 px-4 py-2 text-white hover:bg-red-400 rounded-lg'>
               Register
             </button>
-          </form>
+          
 
          
         </div>
@@ -81,7 +82,7 @@ const Register = () => {
 
         <div>
 
-          <form>
+          
             <label>Eamil</label>
             <input type="email" value={loginEmail} onChange={(e) => {
               setLoginEmail(e.target.value);
@@ -96,7 +97,7 @@ const Register = () => {
             <button type="button" onClick={handlelogin} className='text-2xl my-3 bg-slate-700 px-4 py-2 text-white hover:bg-red-400 rounded-lg'>
               Log-in
             </button>
-          </form>
+  
 
         </div>
 
