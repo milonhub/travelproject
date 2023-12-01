@@ -1,14 +1,13 @@
-import Footer from "./Components/Footer"
-import Router from "./Components/router"
+
+import {Outlet}  from "react-router-dom";
 
 
 const App = () => {
   return (
-    <div>
-      <Router />
-      <Footer />
-    </div>
+    <>
+      <Outlet></Outlet>
+    </>
   )
 }
 
-export default App
+export default App;
