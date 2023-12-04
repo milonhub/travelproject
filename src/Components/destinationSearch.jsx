@@ -91,7 +91,7 @@ const TourBoking = () => {
         alert(destination)
         if(destinations.every((des)=>{
             des === destination
-            navigator
+            
         })){
             <div>
                 <form action="">
