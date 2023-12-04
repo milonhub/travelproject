@@ -1,8 +1,7 @@
-/* eslint-disable react/no-unescaped-entities */
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Calendar from "../Components/claendar"
 import TourBooking from "../Components/destinationSearch"
-// import DestinationSelect from "../Components/wheregodrop"
 import { faCheck, faCirclePlay, faTree } from "@fortawesome/free-solid-svg-icons"
 import AutoSilder from "../Components/autoSilderTestimonal"
 import latestData from "../Components/latestTraveldata.json"
@@ -116,11 +115,7 @@ const Home = () => {
             </div>
           </div>
 
-
         </div>
-
-
-
 
         <div className="w-[500px] h-full pb-10 ">
           <h1 className='text-center text-xl italic text-red-500 pt-8'>Testimonals</h1>
