@@ -1,6 +1,8 @@
 // import { useState } from 'react';
 
 import { useState } from "react";
+import Login from "../Auth/Login";
+import { NavLink } from "react-router-dom";
 
 // const TourBooking = () => {
 //     const destinations = [
@@ -87,8 +89,9 @@ const TourBoking = () => {
 
     const handleSubmit = (event) => {
         alert(destination)
-        if(destinations.filter((des)=>{
+        if(destinations.every((des)=>{
             des === destination
+            navigator
         })){
             <div>
                 <form action="">
