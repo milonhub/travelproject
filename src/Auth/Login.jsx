@@ -1,11 +1,13 @@
 import { signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup, signOut } from "firebase/auth";
 import auth from "../firebase/firebaseConfig";
+import { useState } from "react";
 
 const Login = () => {
-
+const [islogin, setIslogin] = useState(false);
   const logout = () => {
     signOut(auth)
       .then(res => alert("logout"))
+      setIslogin(false)
       .catch(error => alert(error.message))
   }
 
@@ -14,6 +16,7 @@ const Login = () => {
     signInWithPopup(auth, provider)
       .then(res => {
         alert("google login")
+        setIslogin(true)
       }).catch(error => {
         alert(error.message)
       })
@@ -29,6 +32,8 @@ const Login = () => {
         const user = userCredential.user;
         if (user) {
           alert("success")
+          setIslogin(true);
+          alert(islogin)
         }
 
       })
