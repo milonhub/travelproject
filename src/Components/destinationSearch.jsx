@@ -14,17 +14,19 @@ const TourBoking = () => {
         'Rangpur',
     ]
     const [destination, setDestinaton] = useState("")
+    const [user, setUser] = useState(false)
     const handlechange = (event) => {
 
         setDestinaton(event.target.value);
     }
 
     const handleSubmit = (event) => {
-        alert(destination)
-        destinations.every((des) => {
-            if (des === destination)
-                Navigate("/login")
-        })
+            destinations.filter((des)=>{
+                if(des===destination) {
+                    setUser(true)
+                }
+            })
+        
         // }){
         //     <div>
         //         <form action="">
@@ -42,7 +44,7 @@ const TourBoking = () => {
                 <input type="text" className="text-2xl p-2 border-2 border-black" value={destination} onChange={handlechange} />
                 <button type="submit" className="text-2xl">Search</button>
             </form>
-
+            {user ? <Navigate to="/user" replace={true} /> : ""}
         </div>
     )
 }
