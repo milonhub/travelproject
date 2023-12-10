@@ -1,5 +1,6 @@
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import auth from "../firebase/firebaseConfig";
+import { Profile } from "./profile";
 
 const Register = () => {
 
@@ -50,6 +51,7 @@ const Register = () => {
             </div>
           </form>
         </div>
+        <Profile />
       </div>
     </div>
   )

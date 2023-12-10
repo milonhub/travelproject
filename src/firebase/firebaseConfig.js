@@ -1,7 +1,7 @@
 
 import { initializeApp } from "firebase/app";
 import {getAuth} from "firebase/auth"
-// Your web app's Firebase configuration
+import {getStorage} from "firebase/storage"
 const firebaseConfig = {
   apiKey: "AIzaSyBBVjZvb10uuMD2-7J7vvhkYe8fanLiies",
   authDomain: "fir-auth-8ddf8.firebaseapp.com",
@@ -11,7 +11,8 @@ const firebaseConfig = {
   appId: "1:169404123075:web:985238beefec8c53639f76"
 };
 
-// Initialize Firebase
+
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
+export const imageDb = getStorage(app);
 export default auth;
