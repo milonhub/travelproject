@@ -3,11 +3,11 @@ import auth from "../firebase/firebaseConfig";
 import { useState } from "react";
 
 const Login = () => {
-const [islogin, setIslogin] = useState(false);
+const [islogin, setIslogin] = useState(null);
   const logout = () => {
     signOut(auth)
       .then(res => alert("logout"))
-      setIslogin(false)
+      setIslogin(true)
       .catch(error => alert(error.message))
   }
 
@@ -16,7 +16,7 @@ const [islogin, setIslogin] = useState(false);
     signInWithPopup(auth, provider)
       .then(res => {
         alert("google login")
-        setIslogin(true)
+        setIslogin(false)
       }).catch(error => {
         alert(error.message)
       })
@@ -31,8 +31,8 @@ const [islogin, setIslogin] = useState(false);
 
         const user = userCredential.user;
         if (user) {
-          alert("success")
-          setIslogin(true);
+          console.log(user)
+          setIslogin(false);
           alert(islogin)
         }
 
@@ -40,6 +40,8 @@ const [islogin, setIslogin] = useState(false);
       .catch((error) => {
         alert(error.message)
       });
+
+      console.log(islogin)
 
   }
   return (
@@ -65,15 +67,11 @@ const [islogin, setIslogin] = useState(false);
                 <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
               </label>
             </div>
-            <div className="form-control mt-6">
+            {islogin ? <div className="form-control mt-6">
               <button className="btn btn-primary">Login</button>
-            </div>
+            </div> : ""}
           </form>
-          <button className="btn" onClick={handleGoogleSubmit}>
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
-            Button
-          </button>
-
+          
           <button className="btn btn-primary" onClick={logout}>Logout</button>
         </div>
       </div>
