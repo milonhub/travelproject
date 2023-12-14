@@ -3,12 +3,12 @@ import auth from "../firebase/firebaseConfig";
 import { useState } from "react";
 
 const Login = () => {
-const [islogin, setIslogin] = useState(null);
-const [user, setUser] = useState(null);
+  const [islogin, setIslogin] = useState(null);
+  const [user, setUser] = useState(null);
   const logout = () => {
     signOut(auth)
       .then(res => alert("logout"))
-      setIslogin(true)
+    setIslogin(true)
       .catch(error => alert(error.message))
   }
 
@@ -34,7 +34,6 @@ const [user, setUser] = useState(null);
         if (user) {
           setUser(user.email)
           setIslogin(false);
-          alert(islogin)
         }
 
       })
@@ -42,7 +41,7 @@ const [user, setUser] = useState(null);
         alert(error.message)
       });
 
-      console.log(islogin)
+    console.log(islogin)
 
   }
   return (
@@ -50,7 +49,7 @@ const [user, setUser] = useState(null);
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="text-center lg:text-left">
           <h1 className="text-5xl font-bold">Login and Logout now!</h1>
-          {islogin ? " " :  <h1 className="text-5xl font-bold text-rose-600">{user}</h1> }
+          {islogin ? " " : <h1 className="text-5xl font-bold text-rose-600">{user}</h1>}
         </div>
         <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
           <form onSubmit={handleSubmit} className="card-body">
@@ -73,7 +72,7 @@ const [user, setUser] = useState(null);
               <button className="btn btn-primary">Login</button>
             </div> : ""}
           </form>
-          
+
           <button className="btn btn-primary" onClick={logout}>Logout</button>
         </div>
       </div>
