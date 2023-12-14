@@ -19,7 +19,7 @@ const Login = () => {
         alert("google login")
         setIslogin(false)
       }).catch(error => {
-        alert(error.message)
+        console.log(error.message)
       })
   }
 
